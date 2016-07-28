@@ -1542,7 +1542,7 @@ public class CaptureModule extends CameraModule implements
      * settings, rather than a Camera ID.
      */
     private static Facing getFacingFromCameraId(int cameraId) {
-        return cameraId == 1 ? Facing.FRONT : Facing.BACK;
+        return cameraId == 0 ? Facing.FRONT : Facing.BACK;
     }
 
     private void resetTextureBufferSize() {
